@@ -3,12 +3,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => { 
-  res.send('Hello, Jenkins!');
+  res.send('Hello, Jenkins!, We are doing first demo on node');
 });
 
-app.listen(port, () => {
-  console.log('change number one and two');
-  console.log('push for the second time');
-  console.log('push for the third time');
+app.listen(port, () => { 
   console.log(`Server running on port ${port}`);
 });
