@@ -26,10 +26,9 @@ pipeline {
        
         stage('Tests'){
             steps{ 
-                  steps {
+               
                 echo "Running tests" 
-                sh 'npm test'
-            }
+                sh 'npm test' 
             }
         }
         stage('Run app locally'){
