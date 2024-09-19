@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('Received a number one');
+  console.log('change number one');
+  console.log('push for the second time');
   console.log(`Server running on port ${port}`);
 });
