@@ -28,5 +28,11 @@ pipeline {
                  sh 'nohup node index.js &'
             }
         }
+        stage('Deploy to Heroku'){
+            steps{
+               withCredentials([usernameColonPassword(credentialsId: 'f8bddf82-e534-47cc-8a28-bcc281b5f8aa', variable: 'HEROKU_CREDENTIALS')]) {
+                    sh 'git push https://${HEROKU_CREDENTIALS}@git.heroku.com/node-jenkins-demo.git master' } 
+            }
+        }
     }
 }
