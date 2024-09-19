@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools
+    
     stages{
         stage('check version'){
             steps{
