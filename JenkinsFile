@@ -23,7 +23,13 @@ pipeline {
                  sh 'npm install'
             }
         }
-        stage('Run app'){
+       
+        stage('Tests'){
+            steps{ 
+                 echo "Running tests"
+            }
+        }
+        stage('Run app locally'){
             steps{ 
                  sh 'nohup node index.js &'
             }

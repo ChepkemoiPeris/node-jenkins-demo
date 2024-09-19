@@ -7,5 +7,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => { 
+  console.log("adding content")
   console.log(`Server running on port ${port}`);
 });
