@@ -11,7 +11,7 @@ pipeline {
         stage('Clone repo'){
             steps{
                 git(
-                    url: "https://github.com/ChepkemoiPeris/node-jenkins-demo",
+                    url: "https://github.com/ChepkemoiPeris/node-jenkins-demo.git",
                     branch: "main" 
                 )
             }
